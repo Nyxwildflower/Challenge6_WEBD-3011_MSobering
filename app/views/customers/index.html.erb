@@ -1,0 +1,10 @@
+<div class="is-flex is-flex-wrap-wrap is-justify-content-space-around">
+  <h1 class="pl-5 has-text-weight-bold">All Customers</h1>
+
+  <div class="columns is-multiline is-centered px-5">
+    <% @customers.each do |customer| %>
+      <%= render partial: "customer", locals: {customer: customer} %>
+    <% end %>
+  </div>
+  <%= render "links" %>
+</div>
